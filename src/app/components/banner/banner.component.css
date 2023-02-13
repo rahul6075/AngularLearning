@@ -1,0 +1,68 @@
+#carousel {
+    position: relative;
+    /** Medial Quries **/
+  }
+  #carousel .slide {
+    max-width: 90%;
+    margin: 3vh auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #carousel .slide .bg-img {
+    flex: 7;
+  }
+  #carousel .slide .bg-img img {
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  #carousel .slide .slide-content {
+    flex: 5;
+    text-align: left;
+    margin: auto;
+  }
+  #carousel .slide .slide-content button {
+    border: none;
+    outline: none;
+    margin: 0.5em 0px;
+    padding: 10px 0px;
+    background: #eee;
+    color: #192a56;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 30px;
+  }
+  #carousel .prev,
+  #carousel .next {
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin: 0 2vw;
+    padding: 10px;
+    line-height: 1.5vh;
+    cursor: pointer;
+    color: teal;
+    font-size: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  #carousel .next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: auto;
+    margin: 0 2vw;
+    padding: 10px;
+    line-height: 1.5vh;
+    cursor: pointer;
+    color: #192a56;
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    #carousel .slide {
+      flex-direction: column;
+    }
+    #carousel .slide .slide-content h1 {
+      font-size: 3vh;
+    }
+  }

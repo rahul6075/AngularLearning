@@ -1,19 +1,25 @@
-<div id="header">
-    <div class="left">
-        <img src="" alt="logo" class="logo">
-        <span>{{title}}</span>
+<header>
+  <div class="nav-left">
+    <div class="logo">
+      <span><i class="fa-solid fa-spoon"></i>FoodEasy</span>
     </div>
-    <div class="center">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Explore</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="right">
-        <span>Login/SignUp</span>
-    </div>
-</div>
+  </div>
+  <nav class="nav-links">
+    <ul class="nav-items">
+      <li class="nav-item"><a href="/">AboutUs</a></li>
+      <li class="nav-item"><a href="../feed/Feed.html">Home</a></li>
+      <li class="nav-item"><a href="#blog-gallery">Menu</a></li>
+      <li class="nav-item">
+        <a href="./reservations/index.html">Reservations</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="nav-right">
+    <span class="user-btn"
+    ><a href="../auth/Auth.html"
+      ><i class="fa-solid fa-circle-user"></i>Login</a
+    >
+    <i class="fas fa-bars menu" onclick="toggleMenu()"></i>
+  </span>
+  </div>
+</header>

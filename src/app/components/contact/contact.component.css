@@ -1,0 +1,84 @@
+
+/** Contact Section **/
+#contact {
+    max-width: 85%;
+    margin: 10px auto;
+    display: flex;
+    /** Media Quries for mobile Section **/
+  }
+  #contact .left {
+    flex: 7;
+   
+  }
+  #contact .left .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    width: 40vw;
+    padding: 1vh 0.5vw;
+    border: 1px solid #192a56;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  #contact .left .form-container .form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    padding: 10px 0;
+    width: 30vw;
+    /*  Pesudo Element (*) Added After Label */
+  }
+  #contact .left .form-container .form-element .required {
+    padding: 3px 0;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  #contact .left .form-container .form-element .required::after {
+    content: "*";
+    color: red;
+  }
+  #contact .left .form-container .form-element input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #192a56;
+    opacity: 0.8;
+    padding: 5px;
+    color:  #192a56;
+    letter-spacing: 0.05em;
+    background-color: transparent;
+  }
+  #contact .left .form-container button {
+    border: none;
+    outline: none;
+    color: #192a56;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin: 10px auto;
+    font-size: 18px;
+  }
+  #contact .left .form-container button:hover {
+    cursor: pointer;
+    color: #192a56;
+  }
+  #contact .right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    #contact {
+      flex-direction: column;
+    }
+    #contact .left .form-container {
+      width: 60vw;
+    }
+    #contact .left .form-container .form-element {
+      width: 45vw;
+    }
+  }
+  
